@@ -47,7 +47,16 @@ collections:
                 widget: "number"
     # adding a meta object with a path property allows editing the path of entries
     # moving an existing entry will move the entire sub tree of the entry to the new location
-    meta: { path: { widget: string, label: "Path", index_file: "index" } }
+    meta:
+      {
+        path:
+          {
+            widget: string,
+            label: "Path",
+            index_file: "index",
+            default: "{{date}}",
+          },
+      }
 
   # - name: "pages" # Used in routes, e.g., /admin/collections/sidemenu
   #   label: "Pages" # Used in the UI
