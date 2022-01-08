@@ -4,15 +4,15 @@ backend:
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
-   - name: pages
+  - name: pages
     label: Pages
-    label_singular: 'Page'
+    label_singular: "Page"
     folder: content/docs
     create: true
     # adding a nested object will show the collection folder structure
     nested:
       depth: 100 # max depth to show in the collection tree
-      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+      summary: "{{title}}" # optional summary for a tree node, defaults to the inferred title field
     fields:
       - label: Title
         name: title
@@ -22,7 +22,7 @@ collections:
         widget: markdown
     # adding a meta object with a path property allows editing the path of entries
     # moving an existing entry will move the entire sub tree of the entry to the new location
-    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
+    meta: { path: { widget: string, label: "Path", index_file: "index" } }
   - name: "sidemenu" # Used in routes, e.g., /admin/collections/sidemenu
     label: "Side Menu" # Used in the UI
     folder: "content/docs" # The path to the folder where the documents are stored
