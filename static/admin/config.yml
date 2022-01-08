@@ -33,7 +33,7 @@ collections:
               - label: "Name"
                 name: "name"
                 widget: "string"
-                default: "{{name}}"
+                default: { { name } }
               - label: "Identifier"
                 name: "identifier"
                 widget: "string"
