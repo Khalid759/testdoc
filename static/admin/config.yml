@@ -54,7 +54,7 @@ collections:
             widget: string,
             label: "Path",
             index_file: "index",
-            default: "{{date}}",
+            default: "{{slug}}",
           },
       }
 
