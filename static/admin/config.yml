@@ -17,43 +17,43 @@ collections:
       depth: 100 # max depth to show in the collection tree
       summary: "{{title}}" # optional summary for a tree node, defaults to the inferred title field
     fields: # The fields for each document, usually in front matter
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Title", name: "title", widget: "string"}
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Title", name: "title", widget: "string" }
       - label: "Menu"
         name: "menu"
         widget: "object"
-        fields: 
+        fields:
           - label: "Side Bar"
             name: "sidebar"
             widget: "object"
             fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Identifier", name: "identifier", widget: "string"}
-              - {label: "Parent", name: "parent", widget: "string"}
-              - {label: "Weight", name: "weight", widget: "number"}
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Identifier", name: "identifier", widget: "string" }
+              - { label: "Parent", name: "parent", widget: "string" }
+              - { label: "Weight", name: "weight", widget: "number" }
     # adding a meta object with a path property allows editing the path of entries
     # moving an existing entry will move the entire sub tree of the entry to the new location
     meta: { path: { widget: string, label: "Path", index_file: "_index" } }
 
-  - name: "pages" # Used in routes, e.g., /admin/collections/sidemenu
-    label: "Pages" # Used in the UI
-    folder: content/docs
-    path: "{{slug}}/index"
-    media_folder: "" # Save images in the doc's own folder instead of the static folder
-    public_folder: ""
-    identifier_field: name
-    create: true
-    # adding a nested object will show the collection folder structure
-    nested:
-      depth: 100 # max depth to show in the collection tree
-      summary: "{{title}}" # optional summary for a tree node, defaults to the inferred title field
-    fields:
-      - label: Title
-        name: title
-        widget: string
-      - label: Body
-      name: body
-      widget: markdown
-    # adding a meta object with a path property allows editing the path of entries
-    # moving an existing entry will move the entire sub tree of the entry to the new location
-    meta: { path: { widget: string, label: "Path", index_file: "index" } }
+  # - name: "pages" # Used in routes, e.g., /admin/collections/sidemenu
+  #   label: "Pages" # Used in the UI
+  #   folder: content/docs
+  #   path: "{{slug}}/index"
+  #   media_folder: "" # Save images in the doc's own folder instead of the static folder
+  #   public_folder: ""
+  #   identifier_field: name
+  #   create: true
+  #   # adding a nested object will show the collection folder structure
+  #   nested:
+  #     depth: 100 # max depth to show in the collection tree
+  #     summary: "{{title}}" # optional summary for a tree node, defaults to the inferred title field
+  #   fields:
+  #     - label: Title
+  #       name: title
+  #       widget: string
+  #     - label: Body
+  #     name: body
+  #     widget: markdown
+  #   # adding a meta object with a path property allows editing the path of entries
+  #   # moving an existing entry will move the entire sub tree of the entry to the new location
+  #   meta: { path: { widget: string, label: "Path", index_file: "index" } }
