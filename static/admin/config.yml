@@ -8,7 +8,6 @@ collections:
     label: Side Menu Bar
     label_singular: "Side Menu Bar"
     folder: content/docs
-    path: "{{slug}}/_index"
     media_folder: "" # Save images in the doc's own folder instead of the static folder
     public_folder: ""
     create: true
