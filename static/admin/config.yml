@@ -16,8 +16,12 @@ collections:
       depth: 100 # max depth to show in the collection tree
       summary: "{{title}}" # optional summary for a tree node, defaults to the inferred title field
     fields: # The fields for each document, usually in front matter
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Title", name: "title", widget: "string" }
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Title"
+        name: "title"
+        widget: "string"
       - label: "Menu"
         name: "menu"
         widget: "object"
