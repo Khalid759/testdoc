@@ -33,15 +33,15 @@ collections:
               - label: "Name"
                 name: "name"
                 widget: "string"
-                default: { { title } }
+                value_field: "name.first"
               - label: "Identifier"
                 name: "identifier"
                 widget: "string"
-                default: { title }
+                value_field: "name"
               - label: "Parent"
                 name: "parent"
                 widget: "string"
-                default: title
+                value_field: "title"
               - label: "Weight"
                 name: "weight"
                 widget: "number"
