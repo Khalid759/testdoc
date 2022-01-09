@@ -34,6 +34,7 @@ collections:
                 name: "name"
                 widget: "string"
                 required: false
+                default: ["title"]
               - label: "Identifier"
                 name: "indentifier"
                 widget: "string"
