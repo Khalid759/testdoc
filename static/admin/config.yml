@@ -31,17 +31,16 @@ collections:
             widget: "object"
             fields:
               - label: "Name"
-                name: "name"
+                name: "title"
                 widget: "string"
-                indentifier_field: "sidemenubar.title"
+                required: false
               - label: "Identifier"
-                name: "identifier"
+                name: "title"
                 widget: "string"
-                indentifier_field: "name"
+                required: false
               - label: "Parent"
                 name: "parent"
                 widget: "string"
-                indentifier_field: "title"
               - label: "Weight"
                 name: "weight"
                 widget: "number"
