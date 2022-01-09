@@ -32,19 +32,18 @@ collections:
             fields:
               - label: "Name"
                 name: "name"
-                widget: "relation"
-                collection: "sidemenubar"
-                searchFields: ["title"]
-                valueField: "title"
-                displayFields: ["title"]
+                widget: "string"
                 required: false
               - label: "Identifier"
                 name: "indentifier"
                 widget: "string"
-                required: false
               - label: "Parent"
                 name: "parent"
-                widget: "string"
+                widget: "relation"
+                collection: "sidemenubar"
+                searchFields: ["title"]
+                valueField: "name"
+                displayFields: ["title"]
               - label: "Weight"
                 name: "weight"
                 widget: "number"
