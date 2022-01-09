@@ -10,7 +10,6 @@ collections:
     folder: content/docs
     media_folder: "" # Save images in the doc's own folder instead of the static folder
     public_folder: ""
-    path: "{{slug}}/index"
     create: true
     # adding a nested object will show the collection folder structure
     nested:
@@ -52,7 +51,7 @@ collections:
     # adding a meta object with a path property allows editing the path of entries
     # moving an existing entry will move the entire sub tree of the entry to the new location
     meta: { path: { widget: string, label: "Path", index_file: "index" } }
-
+    path: "{{slug}}/index"
   # - name: "pages" # Used in routes, e.g., /admin/collections/sidemenu
   #   label: "Pages" # Used in the UI
   #   folder: content/docs
