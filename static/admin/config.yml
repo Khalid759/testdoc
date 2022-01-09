@@ -42,7 +42,7 @@ collections:
                 widget: "relation"
                 collection: "sidemenubar"
                 searchFields: ["title"]
-                valueField: "name"
+                valueField: "title"
                 displayFields: ["title"]
               - label: "Weight"
                 name: "weight"
